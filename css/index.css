@@ -305,7 +305,7 @@ footer {
   }
 
   header nav a {
-    background: blue;
+    background: white;
     margin: 10px;
     font-size: 14px;
 
@@ -423,12 +423,10 @@ footer {
     margin-top: 35px;
     margin-left: 30px;
     margin-right: 100px;
-    
   }
 
   header nav a {
     background: white;
-    
     font-size: 20px;
     border-bottom: 1px solid black;
     padding: 20px;
@@ -437,13 +435,10 @@ footer {
     color: gray;
   }
 
-header nav a:first-child{
+  header nav a:first-child {
     border-top: 1px solid black;
     padding: 20px;
-    
-}
-
-
+  }
 
   header nav a:hover {
     text-decoration: underline;
@@ -461,26 +456,25 @@ header nav a:first-child{
     width: 50%;
     margin-left: 180px;
     margin-bottom: 0px;
-   
   }
-/* globe */
+  /* globe */
   .title-logo img {
     display: none;
   }
 
-/* title logo area */
+  /* title logo area */
 
-.title-logo .tl-text {
+  .title-logo .tl-text {
     display: inline-block;
     vertical-align: top;
-   
+
     font-size: 67px;
     margin-top: 50px;
     margin-left: 50px;
     text-align: center;
     padding: 0px 75px;
   }
-  
+
   .title-logo .tl-text button {
     background: white;
     vertical-align: top;
@@ -490,33 +484,32 @@ header nav a:first-child{
     border: 1px solid black;
     cursor: pointer;
   }
-  
+
   .title-logo .tl-text button:hover {
     background: black;
     color: white;
   }
-  
+
   .title-logo img {
     display: none;
   }
 
-/* content area */
+  /* content area */
 
-.main-section {
+  .main-section {
     border-top: 2px solid black;
-    
+    margin-left: 60px;
+    width: 410px;
   }
 
   .main-section .top-content {
     display: flex;
     flex-direction: column;
-    padding: 0 10px;
   }
 
   .main-section .top-content .content {
-    width: 410px;
     display: inline-block;
-    margin-right: 34px;
+    margin-bottom: 30px;
   }
 
   .main-section .top-content .content:last-child {
@@ -525,7 +518,7 @@ header nav a:first-child{
 
   .main-section .middle-img {
     margin-top: 45px;
-    width: 640px;
+    width: 410px;
   }
 
   .main-section .last-content {
@@ -536,18 +529,40 @@ header nav a:first-child{
   }
 
   .main-section .last-content .content {
-    width: 275px;
-    display: inline-block;
-    margin-right: 12px;
+    margin-left: 70px;
+    margin-bottom: 30px;
   }
 
   .main-section .last-content .content:last-child {
     margin-right: 0;
   }
 
+  /* contact and footer */
 
+  .contact {
+    margin-top: 37px;
+    padding: 0 10px;
+    margin-left: 60px;
+    border-top: 2px solid black;
+    width: 410px;
+    display: block;
+  }
 
+  .contact h4 {
+    margin: 20px 0;
+    padding: 0px;
+    width: 150px;
+  }
 
+  .contact p {
+    margin: 20px 0;
+    padding: 0px;
+    width: 150px;
+  }
 
-
+  footer {
+    margin: 32px;
+    margin-left: 160px;
+    font-size: 14px;
+  }
 }
