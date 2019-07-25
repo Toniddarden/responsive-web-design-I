@@ -468,6 +468,38 @@ header nav a:first-child{
     display: none;
   }
 
+/* title logo area */
+
+.title-logo .tl-text {
+    display: inline-block;
+    vertical-align: top;
+   
+    font-size: 67px;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: center;
+    padding: 0px 75px;
+  }
+  
+  .title-logo .tl-text button {
+    background: white;
+    vertical-align: top;
+    margin-top: 6px;
+    padding: 8px 44px;
+    font-size: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  
+  .title-logo .tl-text button:hover {
+    background: black;
+    color: white;
+  }
+  
+  .title-logo img {
+    display: none;
+  }
+
 /* content area */
 
 .main-section {
@@ -477,6 +509,7 @@ header nav a:first-child{
 
   .main-section .top-content {
     display: flex;
+    flex-direction: column;
     padding: 0 10px;
   }
 
@@ -497,6 +530,7 @@ header nav a:first-child{
 
   .main-section .last-content {
     display: flex;
+    flex-direction: column;
     margin-top: 37px;
     padding: 0 10px;
   }
