@@ -1,3 +1,568 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  text-align: center;
+  margin: auto;
+}
 
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+/* header area */
+
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header nav {
+  word-spacing: 50px;
+  color: gray;
+  margin-top: 35px;
+  width: 691px;
+  display: inline-block;
+}
+
+header nav a {
+  background: white;
+  margin: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  color: gray;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+header .logo {
+  margin-top: 25px;
+}
+
+/* title logo area */
+
+.title-logo .tl-text {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 77px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0px 75px;
+}
+
+.title-logo .tl-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 15px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.title-logo .tl-text button:hover {
+  background: black;
+  color: white;
+}
+
+.title-logo img {
+  display: inline-block;
+  margin-top: 69px;
+}
+
+/* contant area */
+
+.main-section {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
+}
+
+.main-section .top-content {
+  padding: 0 10px;
+}
+
+.main-section .top-content .content {
+  width: 410px;
+  display: inline-block;
+  margin-right: 34px;
+}
+
+.main-section .top-content .content:last-child {
+  margin-right: 0;
+}
+
+.main-section .middle-img {
+  margin-top: 45px;
+}
+
+.main-section .last-content {
+  margin-top: 37px;
+  padding: 0 10px;
+}
+
+.main-section .last-content .content {
+  width: 275px;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.main-section .last-content .content:last-child {
+  margin-right: 0;
+}
+
+/* contact and footer */
+
+.contact {
+  margin-top: 37px;
+  padding: 0 10px;
+  margin-right: 12px;
+  border-top: 1px solid black;
+  padding: 60px 800px 90px 10px;
+  display: block;
+}
+
+.contact h4 {
+  margin: 20px 0;
+  padding: 0px;
+  width: 150px;
+}
+
+.contact p {
+  margin: 20px 0;
+  padding: 0px;
+  width: 150px;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* media queries max800 */
+
+@media (max-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 70%;
+  }
+
+  header nav {
+    margin-top: 35px;
+    width: 150%;
+  }
+
+  header nav a {
+    background: white;
+    margin: 10px;
+    font-size: 14px;
+
+    text-decoration: none;
+    color: gray;
+  }
+
+  header nav a:hover {
+    text-decoration: underline;
+  }
+
+  header nav a:first-child {
+    margin-left: 0;
+  }
+
+  header nav a:last-child {
+    margin-right: 0;
+  }
+
+  header .logo {
+    width: 40%;
+    margin-left: 260px;
+  }
+
+  .title-logo img {
+    display: none;
+  }
+
+  /* content area */
+
+  .main-section {
+    border-top: 2px solid black;
+    margin-top: 76px;
+    padding-top: 39px;
+  }
+
+  .main-section .top-content {
+    display: flex;
+    padding: 0 10px;
+  }
+
+  .main-section .top-content .content {
+    width: 410px;
+    display: inline-block;
+    margin-right: 34px;
+  }
+
+  .main-section .top-content .content:last-child {
+    margin-right: 0;
+  }
+
+  .main-section .middle-img {
+    margin-top: 45px;
+    width: 640px;
+  }
+
+  .main-section .last-content {
+    display: flex;
+    margin-top: 37px;
+    padding: 0 10px;
+  }
+
+  .main-section .last-content .content {
+    width: 275px;
+    display: inline-block;
+    margin-right: 12px;
+  }
+
+  .main-section .last-content .content:last-child {
+    margin-right: 0;
+  }
+
+  /* contact and footer */
+
+  .contact {
+    margin-top: 37px;
+    padding: 0 10px;
+    margin-right: 12px;
+    border-top: 2px solid black;
+
+    display: block;
+  }
+
+  .contact h4 {
+    margin: 20px 0;
+    padding: 0px;
+    width: 150px;
+  }
+
+  .contact p {
+    margin: 20px 0;
+    padding: 0px;
+    width: 150px;
+  }
+
+  footer {
+    margin: 32px 0;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+/* media queries max500 */
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 300px;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 35px;
+    margin-left: 30px;
+    margin-right: 100px;
+  }
+
+  header nav a {
+    background: white;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    padding-top: 6px;
+    text-decoration: none;
+    color: gray;
+  }
+
+  header nav a:first-child {
+    border-top: 1px solid black;
+    padding: 20px;
+  }
+
+  header nav a:hover {
+    text-decoration: underline;
+  }
+
+  header nav a:first-child {
+    margin-left: 0;
+  }
+
+  header nav a:last-child {
+    margin-right: 0;
+  }
+
+  header .logo {
+    width: 50%;
+    margin-left: 180px;
+    margin-bottom: 0px;
+  }
+  /* globe */
+  .title-logo img {
+    display: none;
+  }
+
+  /* title logo area */
+
+  .title-logo .tl-text {
+    display: inline-block;
+    vertical-align: top;
+
+    font-size: 67px;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: center;
+    padding: 0px 75px;
+  }
+
+  .title-logo .tl-text button {
+    background: white;
+    vertical-align: top;
+    margin-top: 6px;
+    padding: 8px 44px;
+    font-size: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+
+  .title-logo .tl-text button:hover {
+    background: black;
+    color: white;
+  }
+
+  .title-logo img {
+    display: none;
+  }
+
+  /* content area */
+
+  .main-section {
+    border-top: 2px solid black;
+    margin-left: 60px;
+    width: 410px;
+  }
+
+  .main-section .top-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-section .top-content .content {
+    margin-bottom: 30px;
+    
+  }
+
+  .main-section .top-content .content:last-child {
+    margin-right: 0;
+  }
+
+  .main-section .middle-img {
+    margin-top: 45px;
+    width: 410px;
+  }
+
+  .main-section .last-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 37px;
+    padding: 0 10px;
+  }
+
+  .main-section .last-content .content {
+    margin-left: 70px;
+    margin-bottom: 30px;
+  }
+
+  .main-section .last-content .content:last-child {
+    margin-right: 0;
+  }
+
+  /* contact and footer */
+
+  .contact {
+    margin-top: 37px;
+    padding: 0 10px;
+    margin-left: 60px;
+    border-top: 2px solid black;
+    width: 410px;
+    display: block;
+  }
+
+  .contact h4 {
+    margin: 20px 0;
+    padding: 0px;
+    width: 150px;
+  }
+
+  .contact p {
+    margin: 20px 0;
+    padding: 0px;
+    width: 150px;
+  }
+
+  footer {
+    margin: 32px;
+    margin-left: 160px;
+    font-size: 14px;
+  }
+}
